@@ -5,6 +5,7 @@ image:
   alt: Pipedrive logo
 functions:
   - path: pipedrive-list-deals.py
+  - path: pipedrive-list-orgs.py
 prompts:
   - element: form
     name: form_api_key

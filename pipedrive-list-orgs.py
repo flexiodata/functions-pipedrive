@@ -12,20 +12,35 @@
 # examples:
 # notes: |
 #   The following properties are available:
-#     * `deal_name`: Deal name
-#     * `deal_owner`: Deal owner
-#     * `deal_status`: Deal status
-#     * `amt`: Amount
-#     * `amt_home`: Amount in home currency
-#     * `lost_reason`: Lost reason
-#     * `close_date`: Close date
-#     * `pipeline_id`: Pipeline ID
-#     * `participants_cnt`: Number of contacts
-#     * `activities_cnt`: Number of activities
-#     * `last_activity_date`: Last activity date
+#     * `id`: Organization id
+#     * `name`: Organization name
+#     * `label`: Organization label
+#     * `people_cnt`: Number of people in the organization
+#     * `open_deals_cnt`: Number of open deals
+#     * `add_date`: Created date
+#     * `update_date`: Updated date
+#     * `visible_to`: To whom is the organization visible
 #     * `next_activity_date`: Next activity date
-#     * `created_date`: Created date
-#     * `updated_date`: Last activity date
+#     * `last_activity_date`: Last activity date
+#     * `won_deals_cnt`: Number of won deals
+#     * `lost_deals_cnt`: Number of lost deals
+#     * `closed_deals_cnt`: Number of closed deals
+#     * `activities_cnt`: Number of total activities
+#     * `done_activities_cnt`: Number of done activities
+#     * `undone_activities_cnt`: Number of activities to do
+#     * `email_messages_cnt`: Number of email messages
+#     * `picture_id`: Profile picture
+#     * `address`: Address
+#     * `address_suite`: Apartment or suite number
+#     * `address_number`: Street number
+#     * `address_street`: Street name
+#     * `address_district`: District/sublocality
+#     * `address_city`: City/town/village/locality
+#     * `address_state`: State/county
+#     * `address_region`: Region
+#     * `address_country`: Country
+#     * `address_postal_code`: Zip/postal code
+#     * `address_combined`: Combined address
 # ---
 
 import json
@@ -76,20 +91,35 @@ def flexio_handler(flex):
 
     # map this function's property names to the API's property names
     property_map = OrderedDict()
-    property_map['deal_name'] = 'title'
-    property_map['deal_owner'] = 'owner_name'
-    property_map['deal_status'] = 'status'
-    property_map['amt'] = 'value'
-    property_map['amt_home'] = 'weighted_value'
-    property_map['lost_reason'] = 'lost_reason'
-    property_map['close_date'] = 'close_time'
-    property_map['pipeline_id'] = 'pipeline_id'
-    property_map['participants_cnt'] = 'participants_count'
-    property_map['activities_cnt'] = 'activities_count'
-    property_map['last_activity_date'] = 'last_activity_date'
+    property_map['id'] = 'id'
+    property_map['name'] = 'name'
+    property_map['label'] = 'label'
+    property_map['people_cnt'] = 'people_count'
+    property_map['open_deals_cnt'] = 'open_deals_count'
+    property_map['add_date'] = 'add_time'
+    property_map['update_date'] = 'update_time'
+    property_map['visible_to'] = 'visible_to'
     property_map['next_activity_date'] = 'next_activity_date'
-    property_map['created_date'] = 'add_time'
-    property_map['updated_date'] = 'update_time'
+    property_map['last_activity_date'] = 'last_activity_date'
+    property_map['won_deals_cnt'] = 'won_deals_count'
+    property_map['lost_deals_cnt'] = 'lost_deals_count'
+    property_map['closed_deals_cnt'] = 'closed_deals_count'
+    property_map['activities_cnt'] = 'activities_count'
+    property_map['done_activities_cnt'] = 'done_activities_count'
+    property_map['undone_activities_cnt'] = 'undone_activities_count'
+    property_map['email_messages_cnt'] = 'email_messages_count'
+    property_map['picture_id'] = 'picture_id'
+    property_map['address'] = 'address'
+    property_map['address_suite'] = 'address_subpremise'
+    property_map['address_number'] = 'address_street_number'
+    property_map['address_street'] = 'address_route'
+    property_map['address_district'] = 'address_sublocality'
+    property_map['address_city'] = 'address_locality'
+    property_map['address_state'] = 'address_admin_area_level_1'
+    property_map['address_region'] = 'address_admin_area_level_2'
+    property_map['address_country'] = 'address_country'
+    property_map['address_postal_code'] = 'address_postal_code'
+    property_map['address_combined'] = 'address_formatted_address'
 
     try:
 
@@ -109,7 +139,7 @@ def flexio_handler(flex):
             'api_token': auth_token
         }
         url_query_str = urllib.parse.urlencode(url_query_params)
-        url = 'https://' + company_domain + '.pipedrive.com/v1/deals?' + url_query_str
+        url = 'https://' + company_domain + '.pipedrive.com/v1/organizations?' + url_query_str
 
         # get the response data as a JSON object
         response = requests.get(url)
