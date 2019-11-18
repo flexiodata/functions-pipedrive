@@ -104,7 +104,7 @@ def flexio_handler(flex):
         pipedrive_properties = [property_map[p] for p in properties]
 
         # see here for more info:
-        # https://developers.pipedrive.com/docs/methods/deals/get-all-deals
+        # https://developers.pipedrive.com/docs/api/v1/#!/Deals/get_deals
         url_query_params = {
             'api_token': auth_token
         }
