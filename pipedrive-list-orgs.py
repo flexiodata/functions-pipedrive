@@ -1,9 +1,9 @@
 
 # ---
-# name: pipedrive-list-deals
+# name: pipedrive-list-orgs
 # deployed: true
-# title: PipeDrive Deals List
-# description: Returns a list of deals from PipeDrive
+# title: PipeDrive Organizations List
+# description: Returns a list of organizations from PipeDrive
 # params:
 #   - name: properties
 #     type: array
