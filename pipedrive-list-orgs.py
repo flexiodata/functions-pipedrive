@@ -148,11 +148,11 @@ def flexio_handler(flex):
         result.append(properties)
 
         # build up each row and append it to the result
-        deals = content.get('data',[])
-        for deal in deals:
+        orgs = content.get('data',[])
+        for org in orgs:
             row = []
             for p in pipedrive_properties:
-                row.append(deal.get(p,'') or '')
+                row.append(org.get(p,'') or '')
             result.append(row)
 
         # return the results
@@ -176,6 +176,8 @@ def validator_list(field, value, error):
 def to_string(value):
     if isinstance(value, (date, datetime)):
         return value.isoformat()
+    if isinstance(value, (int)):
+        return str(value)
     if isinstance(value, (Decimal)):
         return str(value)
     return value

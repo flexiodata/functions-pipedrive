@@ -4,10 +4,11 @@ image:
   src: https://logo.clearbit.com/pipedrive.com
   alt: Pipedrive logo
 functions:
+  - path: pipedrive-enrich-org.py
+  - path: pipedrive-enrich-person.py
   - path: pipedrive-list-deals.py
   - path: pipedrive-list-orgs.py
-  - path: pipedrive-enrich-person.py
-  - path: pipedrive-enrich-org.py
+  - path: pipedrive-list-people.py
 prompts:
   - element: form
     name: form_api_key
