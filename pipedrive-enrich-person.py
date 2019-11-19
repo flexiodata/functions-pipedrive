@@ -173,7 +173,16 @@ def flexio_handler(flex):
         # limit the results to the requested properties
         result = []
         for p in pipedrive_properties:
-            result.append(content.get('data',{}).get(p,'') or '')
+            # map scalar values
+            val = content.get('data',{}).get(p,'') or ''
+
+            # map values that are nested in an array
+            if isinstance(val, list) and len(val) > 0:
+                if p is 'phone' or p is 'email':
+                    val = val[0]
+                    val = val.get('value','') or ''
+
+            result.append(val)
         result = [result]
 
         # return the results
