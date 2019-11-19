@@ -5,7 +5,7 @@
 # title: Pipedrive Organization Enrichment
 # description: Returns profile information of a company in Pipedrive based on the search term
 # params:
-#   - search_term: properties
+#   - name: search_term
 #     type: string
 #     description: The search term to look for; minimum of 2 characters.
 #     required: true
