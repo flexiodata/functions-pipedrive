@@ -17,7 +17,7 @@
 # notes: |
 #   The following properties are available:
 #     * `id`: The person's id
-#     * `name`: The person's name
+#     * `name`: The person's name (default)
 #     * `label`: The person's label
 #     * `phone`: Phone number
 #     * `email`: Email address

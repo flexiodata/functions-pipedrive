@@ -17,7 +17,7 @@
 # notes: |
 #   The following properties are available:
 #     * `id`: Organization id
-#     * `name`: Organization name
+#     * `name`: Organization name (default)
 #     * `label`: Organization label
 #     * `people_cnt`: Number of people in the organization
 #     * `open_deals_cnt`: Number of open deals
