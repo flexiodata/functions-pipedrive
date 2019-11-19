@@ -24,7 +24,6 @@
 #     * `add_date: Created date
 #     * `update_date: Updated date
 #     * `open_deals_cnt`: Number of open deals
-#     * `visible_to`: To whom is this person visible
 #     * `next_activity_date`: Next activity date
 #     * `last_activity_date`: Last activity date
 #     * `won_deals_cnt`: Number of won deals
@@ -97,7 +96,6 @@ def flexio_handler(flex):
     property_map['add_date'] = 'add_time'
     property_map['update_date'] = 'update_time'
     property_map['open_deals_cnt'] = 'open_deals_count'
-    property_map['visible_to'] = 'visible_to'
     property_map['next_activity_date'] = 'next_activity_date'
     property_map['last_activity_date'] = 'last_activity_date'
     property_map['won_deals_cnt'] = 'won_deals_count'
