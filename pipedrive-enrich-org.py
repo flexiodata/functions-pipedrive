@@ -145,7 +145,7 @@ def flexio_handler(flex):
         content = response.json()
 
         # get the first element of the search results
-        search_results = content.get('data',[])
+        search_results = content.get('data',[]) or []
 
         # bail out; no results were returned
         if len(search_results) == 0:
