@@ -6,6 +6,7 @@ image:
 functions:
   - path: pipedrive-list-deals.py
   - path: pipedrive-list-orgs.py
+  - path: pipedrive-enrich-org.py
 prompts:
   - element: form
     name: form_api_key
