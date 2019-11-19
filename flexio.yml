@@ -5,7 +5,7 @@ image:
   alt: Pipedrive logo
 functions:
   - path: pipedrive-enrich-org.py
-  - path: pipedrive-enrich-person.py
+  - path: pipedrive-enrich-people.py
   - path: pipedrive-list-deals.py
   - path: pipedrive-list-orgs.py
   - path: pipedrive-list-people.py
