@@ -50,15 +50,14 @@ from collections import OrderedDict
 def flexio_handler(flex):
 
     # get the api key from the variable input
-    auth_token = flex.connections['pipedrive'].get_credentials()
-    auth_token = auth_token['api_key']
+    auth_token = dict(flex.vars).get('pipedrive_api_key')
     if auth_token is None:
         flex.output.content_type = "application/json"
         flex.output.write([[""]])
         return
 
     # get the company domain from the variable input
-    company_domain = 'flexio2'
+    company_domain = dict(flex.vars).get('company_domain')
     if company_domain is None:
         flex.output.content_type = "application/json"
         flex.output.write([[""]])
