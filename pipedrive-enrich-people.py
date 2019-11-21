@@ -2,7 +2,7 @@
 # ---
 # name: pipedrive-enrich-people
 # deployed: true
-# title: Pipedrive Person Enrichment
+# title: Pipedrive People Enrichment
 # description: Returns profile information of a person in Pipedrive based on the search term
 # params:
 #   - name: search_term
