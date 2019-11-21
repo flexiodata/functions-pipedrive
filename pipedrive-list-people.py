@@ -17,8 +17,8 @@
 #     * `label`: The person's label
 #     * `phone`: Phone number
 #     * `email`: Email address
-#     * `add_date: Created date
-#     * `update_date: Updated date
+#     * `add_date`: Created date
+#     * `update_date`: Updated date
 #     * `open_deals_cnt`: Number of open deals
 #     * `next_activity_date`: Next activity date
 #     * `last_activity_date`: Last activity date
@@ -30,8 +30,8 @@
 #     * `undone_activities_cnt`: Number of activities to do
 #     * `email_messages_cnt`: Number of email messages
 #     * `picture_id`: Profile picture
-#     * `last_incoming_mail_date: Date of the last email received
-#     * `last_outgoing_mail_date: Date of the last email sent
+#     * `last_incoming_mail_date`: Date of the last email received
+#     * `last_outgoing_mail_date`: Date of the last email sent
 # ---
 
 import json
