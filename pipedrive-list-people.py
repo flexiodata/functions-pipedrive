@@ -2,8 +2,8 @@
 # ---
 # name: pipedrive-list-people
 # deployed: true
-# title: PipeDrive People List
-# description: Returns a list of people from PipeDrive
+# title: Pipedrive People List
+# description: Returns a list of people from Pipedrive
 # params:
 #   - name: properties
 #     type: array
@@ -112,7 +112,7 @@ def flexio_handler(flex):
         if len(properties) == 1 and properties[0] == '*':
             properties = list(property_map.keys())
 
-        # list of the PipeDrive properties we'd like to query
+        # list of the Pipedrive properties we'd like to query
         pipedrive_properties = [property_map[p] for p in properties]
 
         # see here for more info:

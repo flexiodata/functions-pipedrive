@@ -2,8 +2,8 @@
 # ---
 # name: pipedrive-list-orgs
 # deployed: true
-# title: PipeDrive Organizations List
-# description: Returns a list of organizations from PipeDrive
+# title: Pipedrive Organizations List
+# description: Returns a list of organizations from Pipedrive
 # params:
 #   - name: properties
 #     type: array
@@ -128,7 +128,7 @@ def flexio_handler(flex):
         if len(properties) == 1 and properties[0] == '*':
             properties = list(property_map.keys())
 
-        # list of the PipeDrive properties we'd like to query
+        # list of the Pipedrive properties we'd like to query
         pipedrive_properties = [property_map[p] for p in properties]
 
         # see here for more info:
