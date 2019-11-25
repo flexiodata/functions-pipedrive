@@ -10,38 +10,13 @@ functions:
   - path: pipedrive-list-orgs.py
   - path: pipedrive-list-people.py
 prompts:
-  - element: form
-    name: form_api_key
-    title: Pipedrive API key
+  - element: auth
+    name: auth
+    title: Connect to Pipedrive
     description: |
-      Use your Pipedrive API key to access the same APIs that power all Pipedrive tools.
-    class: el-form--cozy el-form__label-tiny
-    rules:
-      pipedrive_api_key:
-        - required: true
-          message: Please enter a valid API key to continue.
-      company_domain:
-        - required: true
-          message: Please enter a valid company domain.
+      Connect to your Pipedrive account to connect the functions to your data
+    connection:
+      connection_type: pipedrive
     form_items:
-      - element: input
-        type: text
-        name: pipedrive_api_key
-        label: API key
-        placeholder: API key
+      - name: pipedrive_connection
         value: ''
-        append:
-          class: f7
-          value: >
-            <a href="https://support.pipedrive.com/hc/en-us/articles/207344545-How-can-I-find-my-personal-API-key" class="blue link" target="_blank">How can I find my Pipedrive API key?</a>
-      - element: input
-        type: text
-        name: company_domain
-        label: Company domain
-        placeholder: Company domain
-        value: ''
-        append:
-          class: f7
-          value: >
-            <a href="https://pipedrive.readme.io/docs/how-to-get-the-company-domain" class="blue link" target="_blank">How can I find my Pipedrive company domain?</a>
-
