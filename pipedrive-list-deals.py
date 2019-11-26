@@ -40,14 +40,14 @@ from collections import OrderedDict
 def flexio_handler(flex):
 
     # get the api key from the variable input
-    auth_token = dict(flex.vars).get('pipedrive_connection').get('access_token')
+    auth_token = dict(flex.vars).get('pipedrive_connection',{}).get('access_token')
     if auth_token is None:
         flex.output.content_type = "application/json"
         flex.output.write([[""]])
         return
 
     # get the company domain from the variable input
-    api_base_uri = dict(flex.vars).get('pipedrive_connection').get('api_base_uri')
+    api_base_uri = dict(flex.vars).get('pipedrive_connection',{}).get('api_base_uri')
     if api_base_uri is None:
         flex.output.content_type = "application/json"
         flex.output.write([[""]])
@@ -105,14 +105,13 @@ def flexio_handler(flex):
 
         # see here for more info:
         # https://developers.pipedrive.com/docs/api/v1/#!/Deals/get_deals
-        url_query_params = {
-            'api_token': auth_token
+        url = api_base_uri + '/v1/deals'
+        headers = {
+            'Authorization': 'Bearer ' + auth_token
         }
-        url_query_str = urllib.parse.urlencode(url_query_params)
-        url = api_base_uri + '/v1/deals?' + url_query_str
 
         # get the response data as a JSON object
-        response = requests.get(url)
+        response = requests.get(url, headers=headers)
         content = response.json()
 
         # return the info
