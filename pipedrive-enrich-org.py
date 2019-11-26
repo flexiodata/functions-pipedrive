@@ -180,10 +180,6 @@ def flexio_handler(flex):
         response = requests.get(url, headers=headers)
         content = response.json()
 
-        # get the response data as a JSON object
-        response = requests.get(url)
-        content = response.json()
-
         # limit the results to the requested properties
         result = []
         for p in pipedrive_properties:
