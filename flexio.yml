@@ -1,7 +1,7 @@
 title: Pipedrive Integration
 description: Functions for accessing your Pipedrive info
 image:
-  src: https://logo.clearbit.com/pipedrive.com
+  src: https://static.flex.io/assets/logos2/pipedrive.png
   alt: Pipedrive logo
 functions:
   - path: pipedrive-enrich-org.py
