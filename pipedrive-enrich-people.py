@@ -11,31 +11,70 @@
 #     required: true
 #   - name: properties
 #     type: array
-#     description: The properties to return (defaults to `name`). See "Notes" for a listing of the available properties.
+#     description: The properties to return (defaults to `name`). See "Returns" for a listing of the available properties.
 #     required: false
+# returns:
+#   - name: id
+#     type: string
+#     description: The person's id
+#   - name: name
+#     type: string
+#     description: The person's name (default)
+#   - name: label
+#     type: string
+#     description: The person's label
+#   - name: phone
+#     type: string
+#     description: Phone number
+#   - name: email
+#     type: string
+#     description: Email address
+#   - name: add_date
+#     type: string
+#     description: Created date
+#   - name: update_date
+#     type: string
+#     description: Updated date
+#   - name: open_deals_cnt
+#     type: string
+#     description: Number of open deals
+#   - name: next_activity_date
+#     type: string
+#     description: Next activity date
+#   - name: last_activity_date
+#     type: string
+#     description: Last activity date
+#   - name: won_deals_cnt
+#     type: string
+#     description: Number of won deals
+#   - name: lost_deals_cnt
+#     type: string
+#     description: Number of lost deals
+#   - name: closed_deals_cnt
+#     type: string
+#     description: Number of closed deals
+#   - name: activities_cnt
+#     type: string
+#     description: Number of total activities
+#   - name: done_activities_cnt
+#     type: string
+#     description: Number of done activities
+#   - name: undone_activities_cnt
+#     type: string
+#     description: Number of activities to do
+#   - name: email_messages_cnt
+#     type: string
+#     description: Number of email messages
+#   - name: picture_id
+#     type: string
+#     description: Profile picture
+#   - name: last_incoming_mail_date
+#     type: string
+#     description: Date of the last email received
+#   - name: last_outgoing_mail_date
+#     type: string
+#     description: Date of the last email sent
 # examples:
-# notes: |
-#   The following properties are available:
-#     * `id`: The person's id
-#     * `name`: The person's name (default)
-#     * `label`: The person's label
-#     * `phone`: Phone number
-#     * `email`: Email address
-#     * `add_date`: Created date
-#     * `update_date`: Updated date
-#     * `open_deals_cnt`: Number of open deals
-#     * `next_activity_date`: Next activity date
-#     * `last_activity_date`: Last activity date
-#     * `won_deals_cnt`: Number of won deals
-#     * `lost_deals_cnt`: Number of lost deals
-#     * `closed_deals_cnt`: Number of closed deals
-#     * `activities_cnt`: Number of total activities
-#     * `done_activities_cnt`: Number of done activities
-#     * `undone_activities_cnt`: Number of activities to do
-#     * `email_messages_cnt`: Number of email messages
-#     * `picture_id`: Profile picture
-#     * `last_incoming_mail_date`: Date of the last email received
-#     * `last_outgoing_mail_date`: Date of the last email sent
 # ---
 
 import json

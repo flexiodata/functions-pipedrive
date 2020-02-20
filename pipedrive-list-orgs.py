@@ -7,39 +7,94 @@
 # params:
 #   - name: properties
 #     type: array
-#     description: The properties to return (defaults to all properties). See "Notes" for a listing of the available properties.
+#     description: The properties to return (defaults to all properties). See "Returns" for a listing of the available properties.
 #     required: false
+# returns:
+#   - name: id
+#     type: string
+#     description: Organization id
+#   - name: name
+#     type: string
+#     description: Organization name
+#   - name: label
+#     type: string
+#     description: Organization label
+#   - name: people_cnt
+#     type: string
+#     description: Number of people in the organization
+#   - name: open_deals_cnt
+#     type: string
+#     description: Number of open deals
+#   - name: add_date
+#     type: string
+#     description: Created date
+#   - name: update_date
+#     type: string
+#     description: Updated date
+#   - name: next_activity_date
+#     type: string
+#     description: Next activity date
+#   - name: last_activity_date
+#     type: string
+#     description: Last activity date
+#   - name: won_deals_cnt
+#     type: string
+#     description: Number of won deals
+#   - name: lost_deals_cnt
+#     type: string
+#     description: Number of lost deals
+#   - name: closed_deals_cnt
+#     type: string
+#     description: Number of closed deals
+#   - name: activities_cnt
+#     type: string
+#     description: Number of total activities
+#   - name: done_activities_cnt
+#     type: string
+#     description: Number of done activities
+#   - name: undone_activities_cnt
+#     type: string
+#     description: Number of activities to do
+#   - name: email_messages_cnt
+#     type: string
+#     description: Number of email messages
+#   - name: picture_id
+#     type: string
+#     description: Profile picture
+#   - name: address
+#     type: string
+#     description: Address
+#   - name: address_suite
+#     type: string
+#     description: Apartment or suite number
+#   - name: address_number
+#     type: string
+#     description: Street number
+#   - name: address_street
+#     type: string
+#     description: Street name
+#   - name: address_district
+#     type: string
+#     description: District/sublocality
+#   - name: address_city
+#     type: string
+#     description: City/town/village/locality
+#   - name: address_state
+#     type: string
+#     description: State/county
+#   - name: address_region
+#     type: string
+#     description: Region
+#   - name: address_country
+#     type: string
+#     description: Country
+#   - name: address_postal_code
+#     type: string
+#     description: Zip/postal code
+#   - name: address_combined
+#     type: string
+#     description: Combined address
 # examples:
-# notes: |
-#   The following properties are available:
-#     * `id`: Organization id
-#     * `name`: Organization name
-#     * `label`: Organization label
-#     * `people_cnt`: Number of people in the organization
-#     * `open_deals_cnt`: Number of open deals
-#     * `add_date`: Created date
-#     * `update_date`: Updated date
-#     * `next_activity_date`: Next activity date
-#     * `last_activity_date`: Last activity date
-#     * `won_deals_cnt`: Number of won deals
-#     * `lost_deals_cnt`: Number of lost deals
-#     * `closed_deals_cnt`: Number of closed deals
-#     * `activities_cnt`: Number of total activities
-#     * `done_activities_cnt`: Number of done activities
-#     * `undone_activities_cnt`: Number of activities to do
-#     * `email_messages_cnt`: Number of email messages
-#     * `picture_id`: Profile picture
-#     * `address`: Address
-#     * `address_suite`: Apartment or suite number
-#     * `address_number`: Street number
-#     * `address_street`: Street name
-#     * `address_district`: District/sublocality
-#     * `address_city`: City/town/village/locality
-#     * `address_state`: State/county
-#     * `address_region`: Region
-#     * `address_country`: Country
-#     * `address_postal_code`: Zip/postal code
-#     * `address_combined`: Combined address
 # ---
 
 import json

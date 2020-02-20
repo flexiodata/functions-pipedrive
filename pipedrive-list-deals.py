@@ -7,25 +7,52 @@
 # params:
 #   - name: properties
 #     type: array
-#     description: The properties to return (defaults to all properties). See "Notes" for a listing of the available properties.
+#     description: The properties to return (defaults to all properties). See "Returns" for a listing of the available properties.
 #     required: false
+# returns:
+#   - name: deal_name
+#     type: string
+#     description: Deal name
+#   - name: deal_owner
+#     type: string
+#     description: Deal owner
+#   - name: deal_status
+#     type: string
+#     description: Deal status
+#   - name: amt
+#     type: string
+#     description: Amount
+#   - name: amt_home
+#     type: string
+#     description: Amount in home currency
+#   - name: lost_reason
+#     type: string
+#     description: Lost reason
+#   - name: close_date
+#     type: string
+#     description: Close date
+#   - name: pipeline_id
+#     type: string
+#     description: Pipeline ID
+#   - name: participants_cnt
+#     type: string
+#     description: Number of contacts
+#   - name: activities_cnt
+#     type: string
+#     description: Number of activities
+#   - name: last_activity_date
+#     type: string
+#     description: Last activity date
+#   - name: next_activity_date
+#     type: string
+#     description: Next activity date
+#   - name: created_date
+#     type: string
+#     description: Created date
+#   - name: updated_date
+#     type: string
+#     description: Last activity date
 # examples:
-# notes: |
-#   The following properties are available:
-#     * `deal_name`: Deal name
-#     * `deal_owner`: Deal owner
-#     * `deal_status`: Deal status
-#     * `amt`: Amount
-#     * `amt_home`: Amount in home currency
-#     * `lost_reason`: Lost reason
-#     * `close_date`: Close date
-#     * `pipeline_id`: Pipeline ID
-#     * `participants_cnt`: Number of contacts
-#     * `activities_cnt`: Number of activities
-#     * `last_activity_date`: Last activity date
-#     * `next_activity_date`: Next activity date
-#     * `created_date`: Created date
-#     * `updated_date`: Last activity date
 # ---
 
 import json
