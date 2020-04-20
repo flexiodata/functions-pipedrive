@@ -1,8 +1,8 @@
 
 # ---
-# name: pipedrive-list-orgs
+# name: pipedrive-organizations
 # deployed: true
-# title: Pipedrive Organizations List
+# title: Pipedrive Organizations
 # description: Returns a list of organizations from Pipedrive
 # params:
 #   - name: properties

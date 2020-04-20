@@ -1,8 +1,8 @@
 
 # ---
-# name: pipedrive-list-people
+# name: pipedrive-people
 # deployed: true
-# title: Pipedrive People List
+# title: Pipedrive People
 # description: Returns a list of people from Pipedrive
 # params:
 #   - name: properties

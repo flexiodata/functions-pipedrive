@@ -1,8 +1,8 @@
 
 # ---
-# name: pipedrive-list-deals
+# name: pipedrive-deals
 # deployed: true
-# title: Pipedrive Deals List
+# title: Pipedrive Deals
 # description: Returns a list of deals from Pipedrive
 # params:
 #   - name: properties
