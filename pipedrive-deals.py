@@ -154,7 +154,7 @@
 #     type: integer
 #     description: The number of followers associated with the deal
 # examples:
-#   - '"*"'
+#   - '""'
 #   - '"title, value, status, add_time"'
 # ---
 
