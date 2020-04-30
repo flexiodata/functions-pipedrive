@@ -12,20 +12,20 @@ functions:
 
 templates:
   - name: search-and-filter-sales-pipeline
-    title: 'Search and filter your sales pipeline'
+    title: 'Search and filter your sales pipeline in Pipedrive'
     description: 'Import and filter data for your sales pipeline'
     gsheets_spreadsheet_id: ''
     excel_spreadsheet_path: ''
     in_production: false
     in_staging: false
   - name: lookup-activity
-    title: 'Lookup recent sales activity '
+    title: 'Lookup recent sales activity'
     description: 'Import and filter data for recent sales activity'
     gsheets_spreadsheet_id: ''
     excel_spreadsheet_path: ''
     in_production: false
     in_staging: false
-  - name: lookup-contact
+  - name: lookup-contacts
     title: 'Lookup contacts in Pipedrive'
     description: 'Search and filter data for contacts in your spreadsheet'
     gsheets_spreadsheet_id: ''
