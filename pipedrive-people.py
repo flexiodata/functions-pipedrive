@@ -252,8 +252,8 @@ def get_item_info(item):
         info['email_label'] = i.get('label','')
         break
 
-    info['org_name'] = item.get('org_id',{}).get('name')
-    info['org_address'] = item.get('org_id',{}).get('address')
+    info['org_name'] = (item.get('org_id') or {}).get('name')
+    info['org_address'] = (item.get('org_id') or {}).get('address')
     info['active_flag'] = item.get('active_flag')
     info['add_time'] = to_date(item.get('add_time'))
     info['update_time'] = to_date(item.get('update_time'))
