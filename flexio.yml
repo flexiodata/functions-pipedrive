@@ -6,6 +6,7 @@ image:
   alt: Pipedrive logo
 
 functions:
+  - path: pipedrive-activity.py
   - path: pipedrive-deals.py
   - path: pipedrive-organizations.py
   - path: pipedrive-people.py
