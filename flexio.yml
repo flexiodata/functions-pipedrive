@@ -10,6 +10,7 @@ functions:
   - path: pipedrive-deals.py
   - path: pipedrive-organizations.py
   - path: pipedrive-people.py
+  - path: pipedrive-products.py
 
 templates:
   - name: search-and-filter-sales-pipeline
